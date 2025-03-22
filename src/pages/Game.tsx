@@ -771,6 +771,6 @@ const Game = () => {
     }
   };
   
-  // Handle next step - Fixing the incomplete function
+  // Handle next step - properly implemented
   const handleNextStep = () => {
-    console.log('handleNextStep called', { currentStep, totalSteps: content?.steps.
+    console.log('handleNextStep called', { currentStep, totalSteps: content?.steps.length });
