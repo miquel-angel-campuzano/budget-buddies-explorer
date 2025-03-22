@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Check, X, Plus, Minus, DollarSign, MessageCircle, PiggyBank, TrendingUp, BarChart } from 'lucide-react';
 import Layout from '@/components/Layout';
@@ -771,7 +771,6 @@ const Game = () => {
     }
   };
   
-  // Handle next step - Fixed the incomplete function
+  // Handle next step - Fixing the incomplete function
   const handleNextStep = () => {
-    if (currentStep < (content?.steps.length || 0) - 1) {
-      setCurrent
+    console.log('handleNextStep called', { currentStep, totalSteps: content?.steps.
