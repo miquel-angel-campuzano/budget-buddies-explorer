@@ -771,6 +771,7 @@ const Game = () => {
     }
   };
   
-  // Handle next step - properly implemented
+  // Handle next step
   const handleNextStep = () => {
-    console.log('handleNextStep called', { currentStep, totalSteps: content?.steps.length });
+    if (currentStep < content.steps.length - 1) {
+      setCurrentStep(currentStep + 1
