@@ -18,30 +18,10 @@ const Topic = () => {
       color: 'blue' as const,
       progress: 85,
       lessons: [
-        { 
-          id: 1, 
-          title: 'Why Save Money?', 
-          description: 'Understand the importance of saving money for your future.',
-          completed: true 
-        },
-        { 
-          id: 2, 
-          title: 'Setting Savings Goals', 
-          description: 'Learn how to set achievable savings goals that matter to you.',
-          completed: true 
-        },
-        { 
-          id: 3, 
-          title: 'Creating a Savings Plan', 
-          description: 'Learn how to make a savings plan that works for you!',
-          completed: false 
-        },
-        { 
-          id: 4, 
-          title: 'Tracking Your Savings', 
-          description: 'Learn how to keep track of your savings and watch them grow!',
-          completed: false 
-        },
+        { id: 1, title: 'Why Save Money?', completed: true },
+        { id: 2, title: 'Setting Savings Goals', completed: true },
+        { id: 3, title: 'Creating a Savings Plan', completed: false },
+        { id: 4, title: 'Tracking Your Savings', completed: false },
       ]
     },
     'compound-interest': {
@@ -51,30 +31,10 @@ const Topic = () => {
       color: 'green' as const,
       progress: 40,
       lessons: [
-        { 
-          id: 1, 
-          title: 'What is Interest?', 
-          description: 'Learn about the basics of interest and how it works.',
-          completed: true 
-        },
-        { 
-          id: 2, 
-          title: 'Simple vs. Compound Interest', 
-          description: 'Discover the magic of compound interest and how it makes your money grow faster.',
-          completed: false 
-        },
-        { 
-          id: 3, 
-          title: 'The Power of Time', 
-          description: 'Learn why starting to save early is so important with compound interest.',
-          completed: false 
-        },
-        { 
-          id: 4, 
-          title: 'Calculating Compound Interest', 
-          description: 'Learn to calculate how your savings will grow over time with compound interest.',
-          completed: false 
-        },
+        { id: 1, title: 'What is Interest?', completed: true },
+        { id: 2, title: 'Simple vs. Compound Interest', completed: false },
+        { id: 3, title: 'The Power of Time', completed: false },
+        { id: 4, title: 'Calculating Compound Interest', completed: false },
       ]
     },
     'investing-basics': {
@@ -84,30 +44,10 @@ const Topic = () => {
       color: 'purple' as const,
       progress: 15,
       lessons: [
-        { 
-          id: 1, 
-          title: 'What is Investing?', 
-          description: 'Learn the basics of investing and why it\'s important for building wealth.',
-          completed: true 
-        },
-        { 
-          id: 2, 
-          title: 'Different Types of Investments', 
-          description: 'Explore various ways to invest your money wisely.',
-          completed: false 
-        },
-        { 
-          id: 3, 
-          title: 'Risk and Reward', 
-          description: 'Understand the balance between risk and potential returns in investing.',
-          completed: false 
-        },
-        { 
-          id: 4, 
-          title: 'Starting Your Investment Journey', 
-          description: 'Learn practical steps to begin investing, even with small amounts.',
-          completed: false 
-        },
+        { id: 1, title: 'What is Investing?', completed: true },
+        { id: 2, title: 'Different Types of Investments', completed: false },
+        { id: 3, title: 'Risk and Reward', completed: false },
+        { id: 4, title: 'Starting Your Investment Journey', completed: false },
       ]
     },
     'assets-vs-liabilities': {
@@ -117,30 +57,10 @@ const Topic = () => {
       color: 'coral' as const,
       progress: 0,
       lessons: [
-        { 
-          id: 1, 
-          title: 'What are Assets?', 
-          description: 'Learn what assets are and how they can help build your wealth.',
-          completed: false 
-        },
-        { 
-          id: 2, 
-          title: 'What are Liabilities?', 
-          description: 'Understand what liabilities are and why they can slow down your financial growth.',
-          completed: false 
-        },
-        { 
-          id: 3, 
-          title: 'Building Wealth with Assets', 
-          description: 'Discover strategies for acquiring assets that grow in value over time.',
-          completed: false 
-        },
-        { 
-          id: 4, 
-          title: 'Avoiding Bad Debt', 
-          description: 'Learn to recognize and avoid liabilities that can drain your finances.',
-          completed: false 
-        },
+        { id: 1, title: 'What are Assets?', completed: false },
+        { id: 2, title: 'What are Liabilities?', completed: false },
+        { id: 3, title: 'Building Wealth with Assets', completed: false },
+        { id: 4, title: 'Avoiding Bad Debt', completed: false },
       ]
     },
     'earning-budgeting': {
@@ -150,30 +70,10 @@ const Topic = () => {
       color: 'gold' as const,
       progress: 0,
       lessons: [
-        { 
-          id: 1, 
-          title: 'Ways to Earn Money', 
-          description: 'Explore different ways kids can earn money and develop entrepreneurial skills.',
-          completed: false 
-        },
-        { 
-          id: 2, 
-          title: 'Creating a Budget', 
-          description: 'Learn how to plan where your money will go before you spend it.',
-          completed: false 
-        },
-        { 
-          id: 3, 
-          title: 'Needs vs. Wants', 
-          description: 'Understand the difference between things you need and things you want.',
-          completed: false 
-        },
-        { 
-          id: 4, 
-          title: 'Tracking Your Spending', 
-          description: 'Discover tools and techniques to keep track of where your money goes.',
-          completed: false 
-        },
+        { id: 1, title: 'Ways to Earn Money', completed: false },
+        { id: 2, title: 'Creating a Budget', completed: false },
+        { id: 3, title: 'Needs vs. Wants', completed: false },
+        { id: 4, title: 'Tracking Your Spending', completed: false },
       ]
     },
   };
@@ -258,22 +158,20 @@ const Topic = () => {
                 className={`rounded-xl p-4 border-2 transition-all duration-300
                   ${index === 0 || lesson.completed 
                     ? 'bg-white border-muted cursor-pointer hover:shadow-md hover:-translate-y-0.5' 
-                    : index === topic.lessons.findIndex(l => !l.completed)
-                      ? 'bg-white border-muted cursor-pointer hover:shadow-md hover:-translate-y-0.5'
-                      : 'bg-gray-50 border-gray-100 opacity-70 cursor-not-allowed'
+                    : 'bg-gray-50 border-gray-100 opacity-70 cursor-not-allowed'
                   }`}
                 onClick={() => {
-                  if (index === 0 || lesson.completed || index === topic.lessons.findIndex(l => !l.completed)) {
+                  if (index === 0 || lesson.completed) {
                     navigate(`/game/${topicId}/${lesson.id}`);
                   }
                 }}
               >
-                <div className="flex justify-between items-start">
+                <div className="flex justify-between items-center">
                   <div className="flex items-center gap-3">
-                    <div className={`rounded-full w-10 h-10 flex-shrink-0 flex items-center justify-center
+                    <div className={`rounded-full w-10 h-10 flex items-center justify-center
                       ${lesson.completed 
                         ? 'bg-fingreen-100 text-fingreen-600' 
-                        : index === topic.lessons.findIndex(l => !l.completed)
+                        : index === 0 && !lesson.completed
                           ? 'bg-fingold-100 text-fingold-600 animate-pulse-subtle'
                           : 'bg-gray-100 text-gray-400'
                       }`}
@@ -287,19 +185,18 @@ const Topic = () => {
                     
                     <div>
                       <h3 className="font-medium">{lesson.title}</h3>
-                      <p className="text-sm text-muted-foreground mt-1">{lesson.description}</p>
-                      <p className="text-xs text-muted-foreground mt-2">
+                      <p className="text-xs text-muted-foreground">
                         {lesson.completed 
                           ? 'Completed' 
-                          : index === topic.lessons.findIndex(l => !l.completed)
-                            ? 'In progress - Continue learning'
-                            : 'Locked - Complete previous lessons first'
+                          : index === 0 && !lesson.completed
+                            ? 'In progress'
+                            : 'Locked'
                         }
                       </p>
                     </div>
                   </div>
                   
-                  {(index === 0 || lesson.completed || index === topic.lessons.findIndex(l => !l.completed)) && (
+                  {(index === 0 || lesson.completed) && (
                     <div className="w-8 h-8 rounded-full bg-muted flex items-center justify-center">
                       <Play className="w-4 h-4 fill-current" />
                     </div>
