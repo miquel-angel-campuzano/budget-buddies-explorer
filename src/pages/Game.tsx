@@ -771,7 +771,7 @@ const Game = () => {
     }
   };
   
-  // Handle next step
+  // Handle next step - Fixed the incomplete function
   const handleNextStep = () => {
     if (currentStep < (content?.steps.length || 0) - 1) {
-      setCurrentStep(currentStep
+      setCurrentStep(
