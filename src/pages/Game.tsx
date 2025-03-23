@@ -21,7 +21,7 @@ const Game = () => {
           {
             type: 'intro',
             title: 'The Power of Saving',
-            content: 'Saving money is like giving a gift to your future self. It helps you prepare for unexpected expenses, achieve your goals, and build financial independence.',
+            content: "Saving money is like giving a gift to your future self. It helps you prepare for unexpected expenses, achieve your goals, and build financial independence.",
             image: 'piggy-bank'
           },
           {
@@ -50,7 +50,7 @@ const Game = () => {
           {
             type: 'intro',
             title: 'Setting Clear Goals',
-            content: 'Having a specific goal makes saving easier and more motivating. A good goal should be specific, measurable, achievable, relevant, and time-bound (SMART).',
+            content: "Having a specific goal makes saving easier and more motivating. A good goal should be specific, measurable, achievable, relevant, and time-bound (SMART).",
             image: 'piggy-bank'
           },
           {
@@ -74,7 +74,7 @@ const Game = () => {
           {
             type: 'intro',
             title: 'Building Your Plan',
-            content: 'A savings plan helps you reach your goals. Start by deciding how much you can save regularly, where you'll keep your money, and how to track your progress.',
+            content: "A savings plan helps you reach your goals. Start by deciding how much you can save regularly, where you'll keep your money, and how to track your progress.",
             image: 'piggy-bank'
           },
           {
@@ -103,7 +103,7 @@ const Game = () => {
           {
             type: 'intro',
             title: 'Monitoring Your Money',
-            content: 'Tracking your savings keeps you motivated and helps you stay on course. You can use a savings journal, app, or even a simple chart.',
+            content: "Tracking your savings keeps you motivated and helps you stay on course. You can use a savings journal, app, or even a simple chart.",
             image: 'piggy-bank'
           },
           {
@@ -112,7 +112,7 @@ const Game = () => {
             options: [
               'It makes money grow faster',
               'It helps you stay motivated and see progress',
-              'It's a rule that banks require',
+              "It's a rule that banks require",
               'It makes saving more difficult'
             ],
             correctAnswer: 1
@@ -134,7 +134,7 @@ const Game = () => {
           {
             type: 'intro',
             title: 'Understanding Interest',
-            content: 'Interest is extra money you earn when you save or extra money you pay when you borrow. It's like a reward for saving or a fee for borrowing.',
+            content: "Interest is extra money you earn when you save or extra money you pay when you borrow. It's like a reward for saving or a fee for borrowing.",
             image: 'piggy-bank'
           },
           {
@@ -158,7 +158,7 @@ const Game = () => {
           {
             type: 'intro',
             title: 'The Magic of Compound Interest',
-            content: 'Simple interest is calculated only on the original amount. Compound interest is calculated on both the original amount AND on the interest already earned, making your money grow faster!',
+            content: "Simple interest is calculated only on the original amount. Compound interest is calculated on both the original amount AND on the interest already earned, making your money grow faster!",
             image: 'piggy-bank'
           },
           {
@@ -189,7 +189,7 @@ const Game = () => {
           {
             type: 'intro',
             title: 'Introduction to Investing',
-            content: 'Investing means putting your money into something with the hope it will grow over time. Unlike saving, investing involves some risk, but can lead to greater rewards.',
+            content: "Investing means putting your money into something with the hope it will grow over time. Unlike saving, investing involves some risk, but can lead to greater rewards.",
             image: 'piggy-bank'
           },
           {
